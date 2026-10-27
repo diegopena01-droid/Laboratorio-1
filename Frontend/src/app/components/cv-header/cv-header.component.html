@@ -1,0 +1,30 @@
+<div class="card shadow-sm border-0 mb-4 overflow-hidden">
+  <div class="bg-primary text-white p-4">
+    <h1 class="h2 mb-1 fw-bold">{{ estudiante.nombre }}</h1>
+    <p class="lead mb-2 opacity-90">{{ estudiante.profesion }}</p>
+
+    <div class="d-flex flex-wrap gap-3 small">
+      <span><i class="bi bi-geo-alt-fill me-1"></i>{{ estudiante.ciudad }}</span>
+      <span><i class="bi bi-envelope-fill me-1"></i>{{ estudiante.correo }}</span>
+      <span><i class="bi bi-telephone-fill me-1"></i>{{ estudiante.telefono }}</span>
+    </div>
+  </div>
+
+  <div class="card-body p-4 bg-white">
+    <h5 class="fw-bold text-primary mb-2">
+      <i class="bi bi-person-badge me-2"></i>Perfil Profesional
+    </h5>
+    <p class="text-secondary mb-3">
+      {{ estudiante.perfil }}
+    </p>
+
+    <div class="d-flex gap-2">
+      <a [href]="estudiante.github" target="_blank" class="btn btn-sm btn-outline-dark">
+        <i class="bi bi-github me-1"></i>GitHub
+      </a>
+      <a [href]="'mailto:' + estudiante.correo" class="btn btn-sm btn-outline-primary">
+        <i class="bi bi-envelope me-1"></i>Enviar Correo
+      </a>
+    </div>
+  </div>
+</div>
