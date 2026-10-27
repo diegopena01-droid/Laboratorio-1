@@ -1,10 +1,3 @@
--- Datos de Estudiante 1 (Cristhian Pulido) y Estudiante 2 (Pareja)
--- ========================================================
--- LABORATORIO 1: SEEDS PARA HOJAS DE VIDA (2 INTEGRANTES)
--- Agregar al final de: Backend/src/database/seed.sql
--- ========================================================
-
--- Datos de Estudiante 1 (Cristhian Pulido) y Estudiante 2 (Pareja)
 INSERT INTO cv_estudiantes (nombre, profesion, perfil, correo, telefono, ciudad, linkedin, github, avatar_url)
 VALUES
     (
@@ -30,10 +23,9 @@ VALUES
         'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'
     );
 
--- Trayectoria (Formación, Habilidades, Experiencia, Proyectos)
 INSERT INTO cv_trayectoria (estudiante_id, categoria, titulo, institucion, periodo, descripcion)
 VALUES
-    -- Trayectoria Cristhian Pulido (id: 1)
+
     (1, 'FORMACION', 'Ingeniería de Sistemas', 'Unidad Central del Valle del Cauca (UCEVA)', '2022 - Presente', 'Cursando semestre actual con énfasis en Programación en Ambiente Web, Bases de Datos y Estructuras de Datos.'),
     (1, 'FORMACION', 'Bachiller Técnico en Informática', 'Institución Educativa Técnica', '2016 - 2021', 'Énfasis en fundamentos de lógica computacional y mantenimiento de sistemas.'),
     (1, 'HABILIDAD', 'Desarrollo Frontend con Angular & TypeScript', 'UCEVA Web I', '2024 - Presente', 'Componentes standalone, signals, routing jerárquico, RxJS y Bootstrap 5.'),
@@ -42,7 +34,6 @@ VALUES
     (1, 'PROYECTO', 'Plataforma de Reservas para Teatros', 'Proyecto Integrador Web I', '2026', 'Sistema web monorepo con Angular y Node.js para reserva y gestión de boletería de eventos culturales.'),
     (1, 'EXPERIENCIA', 'Monitor Académico de Programación', 'Facultad de Ingeniería UCEVA', '2025 - 2026', 'Apoyo a estudiantes en resolución de dudas de algoritmia y programación orientada a objetos.'),
 
-    -- Trayectoria Alejandro Montoya (id: 2)
     (2, 'FORMACION', 'Ingeniería de Sistemas', 'Unidad Central del Valle del Cauca (UCEVA)', '2022 - Presente', 'Formación en ingeniería de software, arquitectura de sistemas y gestión de proyectos tecnológicos.'),
     (2, 'FORMACION', 'Certificación en Git y Flujos Colaborativos', 'Platzi / UCEVA', '2023', 'Manejo de GitFlow, control de versiones semántico y conventional commits.'),
     (2, 'HABILIDAD', 'Angular & CSS / SCSS Avanzado', 'Frontend UI', '2024 - Presente', 'Diseño de interfaces accesibles, maquetación responsive y componentización modular.'),

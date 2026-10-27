@@ -6,7 +6,9 @@ export interface CvEstudiante {
   correo: string;
   telefono: string;
   ciudad: string;
+  linkedin?: string;
   github?: string;
+  avatar_url?: string;
 }
 
 export interface CvTrayectoria {
