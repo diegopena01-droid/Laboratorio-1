@@ -1,5 +1,11 @@
 -- Datos de Estudiante 1 (Cristhian Pulido) y Estudiante 2 (Pareja)
-INSERT INTO cv_estudiantes (nombre, profesion, perfil, correo, telefono, ciudad, github)
+-- ========================================================
+-- LABORATORIO 1: SEEDS PARA HOJAS DE VIDA (2 INTEGRANTES)
+-- Agregar al final de: Backend/src/database/seed.sql
+-- ========================================================
+
+-- Datos de Estudiante 1 (Cristhian Pulido) y Estudiante 2 (Pareja)
+INSERT INTO cv_estudiantes (nombre, profesion, perfil, correo, telefono, ciudad, linkedin, github, avatar_url)
 VALUES
     (
         'Cristhian Pulido',
@@ -8,8 +14,10 @@ VALUES
         'cristhianpulidor26@gmail.com',
         '+57 315 123 4567',
         'Tuluá, Valle del Cauca',
+        'https://linkedin.com/in/cristhian-pulido',
         'https://github.com/cristhianpulido',
-       
+        'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80'
+    ),
     (
         'Alejandro Peña',
         'Estudiante de Ingeniería de Sistemas',
@@ -17,7 +25,9 @@ VALUES
         'diego.pena01@uceva.edu.co',
         '+57 318 987 6543',
         'El Dovio, Valle del Cauca',
+        'https://linkedin.com/in/alejandro-montoya',
         'https://github.com/alemontoya',
+        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'
     );
 
 -- Trayectoria (Formación, Habilidades, Experiencia, Proyectos)

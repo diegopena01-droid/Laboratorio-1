@@ -1,5 +1,6 @@
 import { Router } from "express";
-import { ExampleRoutes } from "./modules/example/example.routes";
+import { CvRoutes } from "./modules/cv/cv.routes";
+import { TrayectoriaRoutes } from "./modules/trayectoria/trayectoria.routes";
 
 export class AppRoutes {
 
@@ -7,8 +8,9 @@ export class AppRoutes {
     const router = Router();
     const apiRouter = Router();
 
-    // Definir rutas
-    apiRouter.use("/example", ExampleRoutes.routes);
+    // Rutas del proyecto
+    apiRouter.use("/cv", CvRoutes.routes);
+    apiRouter.use("/trayectoria", TrayectoriaRoutes.routes);
 
     router.use("/api", apiRouter);
 
