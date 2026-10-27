@@ -1,5 +1,5 @@
 -- Datos de Estudiante 1 (Cristhian Pulido) y Estudiante 2 (Pareja)
-INSERT INTO cv_estudiantes (nombre, profesion, perfil, correo, telefono, ciudad, linkedin, github, avatar_url)
+INSERT INTO cv_estudiantes (nombre, profesion, perfil, correo, telefono, ciudad, github)
 VALUES
     (
         'Cristhian Pulido',
@@ -14,7 +14,7 @@ VALUES
         'Alejandro Peña',
         'Estudiante de Ingeniería de Sistemas',
         'Desarrollador orientado a frontend y diseño de interfaces con Angular y TypeScript. Experiencia en integración de APIs REST, buenas prácticas y metodologías ágiles.',
-        'alejandro.montoya@uceva.edu.co',
+        'diego.pena01@uceva.edu.co',
         '+57 318 987 6543',
         'El Dovio, Valle del Cauca',
         'https://github.com/alemontoya',
