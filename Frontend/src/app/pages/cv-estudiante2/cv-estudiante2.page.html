@@ -1,0 +1,58 @@
+<div class="container py-4">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <div>
+      <span class="badge bg-success mb-1">Laboratorio 1 - Web I</span>
+      <h2 class="h4 mb-0 fw-bold">Hoja de Vida: Integrante 2 (Diego Peña)</h2>
+    </div>
+    <div class="btn-group">
+      <a routerLink="/cv-estudiante1" routerLinkActive="active" class="btn btn-outline-primary">
+        <i class="bi bi-person me-1"></i>Cristhian
+      </a>
+      <a routerLink="/cv-estudiante2" routerLinkActive="active" class="btn btn-outline-primary active">
+        <i class="bi bi-person-fill me-1"></i>Alejandro
+      </a>
+    </div>
+  </div>
+
+  @if (cargando && !estudiante) {
+    <div class="text-center py-5">
+      <div class="spinner-border text-success" role="status">
+        <span class="visually-hidden">Cargando...</span>
+      </div>
+      <p class="mt-2 text-muted">Consultando información desde el backend...</p>
+    </div>
+  }
+
+  @if (estudiante) {
+    <app-cv-header [estudiante]="estudiante" />
+
+    <div class="row">
+      <div class="col-12 col-lg-6 mb-4">
+        <app-cv-section
+          title="Formación Académica"
+          icon="bi-mortarboard-fill"
+          badgeColor="success"
+          [items]="formacion"
+        />
+      </div>
+
+      <div class="col-12 col-lg-6 mb-4">
+        <app-cv-section
+          title="Conocimientos y Habilidades"
+          icon="bi-code-slash"
+          badgeColor="primary"
+          [items]="habilidades"
+        />
+      </div>
+
+      <div class="col-12 mb-4">
+        <app-cv-section
+          title="Experiencia Laboral y Proyectos"
+          icon="bi-briefcase-fill"
+          badgeColor="dark"
+          [items]="experienciaProyectos"
+        />
+      </div>
+    </div>
+  }
+</div>
